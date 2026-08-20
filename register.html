@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - HashPower</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: #07111f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: #0d1d31;
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9fb0c4;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #dce5ef;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border: 1px solid #29405a;
+            border-radius: 8px;
+            background: #07111f;
+            color: white;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #18a558;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #9fb0c4;
+        }
+
+        .checkbox input {
+            width: auto;
+            margin: 2px 0 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #18a558;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 25px;
+            color: #9fb0c4;
+        }
+
+        .login a {
+            color: #18a558;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .notice {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 8px;
+            background: #251f0b;
+            color: #e5c76b;
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">⚡ HashPower</div>
+
+    <p class="subtitle">
+        Create your account
+    </p>
+
+    <form>
+
+        <label>Full Name</label>
+        <input
+            type="text"
+            placeholder="Enter your full name"
+            required
+        >
+
+        <label>Email Address</label>
+        <input
+            type="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <label>Password</label>
+        <input
+            type="password"
+            placeholder="Create a password"
+            minlength="8"
+            required
+        >
+
+        <label>Confirm Password</label>
+        <input
+            type="password"
+            placeholder="Confirm your password"
+            minlength="8"
+            required
+        >
+
+        <div class="checkbox">
+            <input type="checkbox" required>
+            <span>
+                I agree to the Terms of Service and Risk Disclosure.
+            </span>
+        </div>
+
+        <button type="submit">
+            Create Account
+        </button>
+
+    </form>
+
+    <div class="login">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="notice">
+        HashPower investments involve risk.
+        Returns are not guaranteed.
+    </div>
+
+</div>
+
+</body>
+</html>
