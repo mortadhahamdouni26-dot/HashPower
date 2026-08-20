@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HashPower</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            background: #0b1728;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .user {
+            color: #aebdce;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 35px auto;
+        }
+
+        .welcome {
+            margin-bottom: 25px;
+        }
+
+        .welcome h1 {
+            margin-bottom: 8px;
+        }
+
+        .welcome p {
+            color: #91a2b5;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: #0d1d31;
+            border: 1px solid #1b3048;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .card .title {
+            color: #91a2b5;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .card .value {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .green {
+            color: #18a558;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 18px;
+        }
+
+        .mining {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .mining-box {
+            background: #0d1d31;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #1b3048;
+        }
+
+        .bar {
+            height: 10px;
+            background: #182b40;
+            border-radius: 20px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .bar span {
+            display: block;
+            width: 68%;
+            height: 100%;
+            background: #18a558;
+        }
+
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .action {
+            padding: 18px;
+            background: #0d1d31;
+            border: 1px solid #1b3048;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .action:hover {
+            border-color: #18a558;
+        }
+
+        .notice {
+            margin-top: 30px;
+            padding: 15px;
+            background: #251f0b;
+            color: #e5c76b;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            color: #718195;
+        }
+
+        @media (max-width: 850px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mining {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 550px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .actions {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⚡ HashPower</div>
+    <div class="user">Welcome, Investor</div>
+</header>
+
+<div class="container">
+
+    <div class="welcome">
+        <h1>Dashboard</h1>
+        <p>Your mining investment overview</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="title">Portfolio Balance</div>
+            <div class="value">$0.00</div>
+        </div>
+
+        <div class="card">
+            <div class="title">Mining Power</div>
+            <div class="value">0 TH/s</div>
+        </div>
+
+        <div class="card">
+            <div class="title">Mining Revenue</div>
+            <div class="value green">$0.00</div>
+        </div>
+
+        <div class="card">
+            <div class="title">Active Investments</div>
+            <div class="value">0</div>
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Mining Performance</h2>
+
+        <div class="mining">
+
+            <div class="mining-box">
+
+                <p>Current Mining Capacity</p>
+
+                <div class="bar">
+                    <span></span>
+                </div>
+
+                <p style="margin-top:15px; color:#91a2b5;">
+                    No active mining equipment connected.
+                </p>
+
+            </div>
+
+            <div class="mining-box">
+
+                <p style="color:#91a2b5;">
+                    BTC Mined
+                </p>
+
+                <h2 style="margin-top:10px;">
+                    0 BTC
+                </h2>
+
+                <p style="color:#91a2b5;">
+                    Verified mining data
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Account</h2>
+
+        <div class="actions">
+
+            <a href="#" class="action">
+                💰 Investments
+            </a>
+
+            <a href="#" class="action">
+                📜 Transactions
+            </a>
+
+            <a href="#" class="action">
+                🪪 KYC Verification
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="notice">
+        ⚠️ HashPower is currently under development.
+        Investment returns are not guaranteed and all investment activities
+        are subject to applicable laws and regulations.
+    </div>
+
+</div>
+
+<footer>
+    © 2026 HashPower. All rights reserved.
+</footer>
+
+</body>
+</html>
