@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HashPower</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #0b1728;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #07111f, #102b45);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #b8c7d9;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #18a558;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #18a558;
+            color: white;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 50px 8%;
+        }
+
+        .card {
+            background: #0d1d31;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #18a558;
+            margin-bottom: 10px;
+        }
+
+        .plans {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .plans h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .notice {
+            margin: 30px auto;
+            max-width: 850px;
+            padding: 15px;
+            background: #251f0b;
+            color: #e5c76b;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0b1728;
+            color: #8998aa;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⚡ HashPower</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Mining</a>
+        <a href="#">Plans</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>HashPower</h1>
+
+    <p>
+        Real Mining Infrastructure.
+        Transparent Performance.
+        Responsible Investment.
+    </p>
+
+    <div class="buttons">
+        <a href="#" class="btn primary">Explore Mining</a>
+        <a href="#" class="btn secondary">Create Account</a>
+    </div>
+</section>
+
+<div class="notice">
+    ⚠️ Investment involves risk. Returns are not guaranteed.
+</div>
+
+<section class="stats">
+
+    <div class="card">
+        <h2>0 TH/s</h2>
+        <p>Mining Power</p>
+    </div>
+
+    <div class="card">
+        <h2>0</h2>
+        <p>Active Miners</p>
+    </div>
+
+    <div class="card">
+        <h2>0 BTC</h2>
+        <p>BTC Mined</p>
+    </div>
+
+</section>
+
+<section class="plans">
+
+    <h2>Mining Plans</h2>
+
+    <div class="card">
+        <h2>Mining Infrastructure</h2>
+
+        <p>
+            Discover our mining infrastructure,
+            equipment and performance data.
+        </p>
+
+        <br>
+
+        <a href="#" class="btn primary">
+            Learn More
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 HashPower. All rights reserved.
+</footer>
+
+</body>
+</html>
